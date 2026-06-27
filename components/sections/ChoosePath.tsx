@@ -1,38 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Shirt, Compass, Users } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getChoosePaths } from "@/data/choosePathData";
 
 export default function ChoosePath() {
   const { t } = useLanguage();
-
-  const paths = [
-    {
-      num: "01",
-      title: t("path.1.title"),
-      icon: Users,
-      description: t("path.1.desc"),
-      linkText: t("path.1.cta"),
-      waText: t("path.1.wa")
-    },
-    {
-      num: "02",
-      title: t("path.2.title"),
-      icon: Shirt,
-      description: t("path.2.desc"),
-      linkText: t("path.2.cta"),
-      waText: t("path.2.wa")
-    },
-    {
-      num: "03",
-      title: t("path.3.title"),
-      icon: Compass,
-      description: t("path.3.desc"),
-      linkText: t("path.3.cta"),
-      waText: t("path.3.wa")
-    }
-  ];
+  const paths = getChoosePaths(t);
 
   const containerVariants = {
     hidden: {},

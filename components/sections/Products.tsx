@@ -4,33 +4,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getProducts } from "@/data/productsData";
 
 export default function Products() {
   const { t } = useLanguage();
-
-  const products = [
-    {
-      title: t("prod.1.title"),
-      image: "/uniform.png",
-      description: t("prod.1.desc"),
-      items: t("prod.1.items").split("|"),
-      waText: t("prod.1.wa")
-    },
-    {
-      title: t("prod.2.title"),
-      image: "/brand_apparel.png",
-      description: t("prod.2.desc"),
-      items: t("prod.2.items").split("|"),
-      waText: t("prod.2.wa")
-    },
-    {
-      title: t("prod.3.title"),
-      image: "/merchandise.png",
-      description: t("prod.3.desc"),
-      items: t("prod.3.items").split("|"),
-      waText: t("prod.3.wa")
-    }
-  ];
+  const products = getProducts(t);
 
   const containerVariants = {
     hidden: {},

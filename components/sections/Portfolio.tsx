@@ -3,48 +3,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+import { getPortfolioItems } from "@/data/portfolioData";
 
 export default function Portfolio() {
   const { t } = useLanguage();
-
-  const items = [
-    {
-      title: "Hana Casual Line",
-      category: t("prod.2.title"),
-      image: "/brand_apparel.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    },
-    {
-      title: "Bali Riders Club",
-      category: t("path.1.title"),
-      image: "/portfolio_community.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    },
-    {
-      title: "Kopi Studio Workwear",
-      category: t("prod.1.title"),
-      image: "/uniform.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    },
-    {
-      title: "Premium Stitching Craft",
-      category: "Makloon / Jasa Jahit",
-      image: "/portfolio_details.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    },
-    {
-      title: "Summer Resort Collection",
-      category: t("prod.2.title"),
-      image: "/hero_apparel.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    },
-    {
-      title: "Minimalist Linen Merch",
-      category: t("prod.3.title"),
-      image: "/merchandise.png",
-      spanClass: "md:col-span-1 lg:col-span-1"
-    }
-  ];
+  const items = getPortfolioItems(t);
 
   const containerVariants = {
     hidden: {},

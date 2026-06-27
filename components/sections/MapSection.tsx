@@ -1,34 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getContactDetails } from "@/data/mapData";
 
 export default function MapSection() {
   const { t } = useLanguage();
-
-  const contactDetails = [
-    {
-      icon: MapPin,
-      title: t("map.addr.title"),
-      content: t("map.addr.content")
-    },
-    {
-      icon: Phone,
-      title: t("map.phone.title"),
-      content: "+62 812-3456-7890"
-    },
-    {
-      icon: Mail,
-      title: t("map.email.title"),
-      content: "hello@roomproduction.com"
-    },
-    {
-      icon: Clock,
-      title: t("map.hours.title"),
-      content: t("map.hours.content")
-    }
-  ];
+  const contactDetails = getContactDetails(t);
 
   return (
     <section className="py-24 md:py-36 bg-white border-b border-[#E5E7EB] overflow-hidden">

@@ -4,28 +4,11 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, MessageCircle, HelpCircle } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getFaqs } from "@/data/faqData";
 
 export default function Faq() {
   const { t, language } = useLanguage();
-
-  const faqs = [
-    {
-      question: t("faq.1.q"),
-      answer: t("faq.1.a")
-    },
-    {
-      question: t("faq.2.q"),
-      answer: t("faq.2.a")
-    },
-    {
-      question: t("faq.3.q"),
-      answer: t("faq.3.a")
-    },
-    {
-      question: t("faq.4.q"),
-      answer: t("faq.4.a")
-    }
-  ];
+  const faqs = getFaqs(t);
 
   return (
     <section id="faq" className="py-24 md:py-36 bg-white border-b border-[#E5E7EB]">

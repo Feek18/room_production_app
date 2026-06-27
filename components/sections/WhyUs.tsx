@@ -1,44 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale, MessageCircle, BarChart3, Tag, RotateCcw, HeartHandshake } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getWhyUsReasons } from "@/data/whyUsData";
 
 export default function WhyUs() {
   const { t } = useLanguage();
-
-  const reasons = [
-    {
-      icon: Scale,
-      title: t("why.1.title"),
-      description: t("why.1.desc")
-    },
-    {
-      icon: MessageCircle,
-      title: t("why.2.title"),
-      description: t("why.2.desc")
-    },
-    {
-      icon: BarChart3,
-      title: t("why.3.title"),
-      description: t("why.3.desc")
-    },
-    {
-      icon: Tag,
-      title: t("why.4.title"),
-      description: t("why.4.desc")
-    },
-    {
-      icon: RotateCcw,
-      title: t("why.5.title"),
-      description: t("why.5.desc")
-    },
-    {
-      icon: HeartHandshake,
-      title: t("why.6.title"),
-      description: t("why.6.desc")
-    }
-  ];
+  const reasons = getWhyUsReasons(t);
 
   const containerVariants = {
     hidden: {},
