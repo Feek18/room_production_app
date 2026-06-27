@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Room Production" }],
   creator: "Room Production",
   publisher: "Room Production",
-  metadataBase: new URL("https://roomproduction.com"), // Ganti dengan domain asli saat deploy
+  metadataBase: new URL("https://room-production-app.vercel.app"), // Ganti dengan domain asli saat custom domain aktif
   alternates: {
     canonical: "/",
     languages: {
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://roomproduction.com",
+    url: "https://room-production-app.vercel.app",
     title: "Room Production | Premium Apparel & Uniform Production Partner",
     description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri. Berbasis di Denpasar, Bali.",
     siteName: "Room Production",
     images: [
       {
-        url: "/og-image.jpg", // Gambar preview saat link di-share (WA/FB)
+        url: "/logo.jpg", // Menggunakan logo.jpg yang ada di folder public
         width: 1200,
         height: 630,
         alt: "Room Production - Premium Apparel & Uniform Partner"
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Room Production | Premium Apparel & Uniform Partner",
     description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri.",
-    images: ["/og-image.jpg"]
+    images: ["/logo.jpg"]
   },
   robots: {
     index: true,
