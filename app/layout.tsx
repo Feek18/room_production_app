@@ -52,20 +52,11 @@ export const metadata: Metadata = {
     title: "Room Production | Premium Apparel & Uniform Production Partner",
     description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri. Berbasis di Denpasar, Bali.",
     siteName: "Room Production",
-    images: [
-      {
-        url: "/logo.jpg", // Menggunakan logo.jpg yang ada di folder public
-        width: 1200,
-        height: 630,
-        alt: "Room Production - Premium Apparel & Uniform Partner"
-      }
-    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Room Production | Premium Apparel & Uniform Partner",
     description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri.",
-    images: ["/logo.jpg"]
   },
   robots: {
     index: true,
