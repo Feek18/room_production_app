@@ -144,7 +144,7 @@ const translations = {
     "foot.nav": "Navigasi Cepat",
     "foot.hq": "Kantor Pusat",
     "foot.notice": "*Kunjungan langsung ke workshop harap melakukan janji temu terlebih dahulu melalui WhatsApp.",
-    "foot.rebrand": "Rebranding dari Garmentbali.id"
+    // "foot.rebrand": "Rebranding dari Garmentbali.id"
   },
   en: {
     // Navbar
@@ -269,7 +269,7 @@ const translations = {
     "foot.nav": "Quick Navigation",
     "foot.hq": "Headquarters",
     "foot.notice": "*Direct workshop visits require a prior appointment via WhatsApp.",
-    "foot.rebrand": "Rebranded from Garmentbali.id"
+    // "foot.rebrand": "Rebranded from Garmentbali.id"
   }
 };
 

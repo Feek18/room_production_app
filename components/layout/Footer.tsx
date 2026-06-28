@@ -18,12 +18,12 @@ export default function Footer() {
       <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[#1E293B]/20 rounded-full blur-[80px] pointer-events-none select-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
+
         {/* Final CTA Banner Card */}
         <div className="mb-20">
           <div className="bg-gradient-to-r from-[#1E293B] via-[#0F172A] to-[#1E293B] border border-slate-800/80 rounded-3xl px-8 py-10 md:px-12 md:py-14 shadow-2xl relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-80 h-80 bg-[#06B6D4]/5 rounded-full blur-[60px] pointer-events-none" />
-            
+
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
               <div className="lg:col-span-8">
                 <span className="text-xs uppercase font-sans tracking-[0.35em] text-[#06B6D4] mb-3 inline-block font-bold">
@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Footer Navigation & Brand details */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
-          
+
           {/* Column 1: Brand Info */}
           <div className="lg:col-span-4 flex flex-col justify-between">
             <div>
@@ -59,7 +59,7 @@ export default function Footer() {
                 {t("foot.desc")}
               </p>
             </div>
-            
+
             {/* Social Media Links */}
             <div className="flex items-center gap-4 mt-8">
               <a
@@ -188,15 +188,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Copyright Area */}
-        <div className="border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="flex justify-center items-center border-t border-slate-900 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <span className="font-sans text-xs text-slate-500">
             &copy; {new Date().getFullYear()} Room Production. All rights reserved.
           </span>
-          <span className="font-sans text-xs text-slate-500 font-bold uppercase tracking-wider">
-            {t("foot.rebrand")}
-          </span>
         </div>
-
       </div>
     </footer>
   );
