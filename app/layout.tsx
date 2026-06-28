@@ -16,6 +16,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "icon.svg",
+  },
   title: {
     default: "Room Production | Premium Apparel & Uniform Production Partner",
     template: "%s | Room Production"
@@ -137,7 +140,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </head>
-      <body 
+      <body
         className="min-h-full flex flex-col bg-white text-[#1E293B] selection:bg-[#06B6D4] selection:text-white"
         suppressHydrationWarning
       >
