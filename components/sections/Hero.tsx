@@ -85,7 +85,7 @@ export default function Hero() {
             className="relative w-full max-w-[400px] aspect-[3/4] bg-stone-100 overflow-hidden border border-[#E5E7EB] group shadow-sm"
           >
             <Image
-              src="/hero_apparel.png"
+              src="/images/SAVE_20260628_165959.jpg"
               alt="Room Production Apparel Mockup"
               fill
               priority

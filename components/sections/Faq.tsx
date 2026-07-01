@@ -79,7 +79,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
       className={`border rounded-2xl p-6 transition-all duration-300 select-none ${
         isOpen
           ? "bg-slate-50/50 border-[#06B6D4]/40 shadow-sm"
-          : "bg-white border-slate-200/80 hover:border-slate-350 hover:bg-slate-50/20"
+          : "bg-white border-slate-200/80 hover:border-slate-300 hover:bg-slate-50/20"
       }`}
     >
       <button
@@ -93,7 +93,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
           className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-300 flex-shrink-0 ${
             isOpen
               ? "border-[#06B6D4] bg-[#06B6D4] text-white rotate-180"
-              : "border-slate-200 text-[#1E293B] group-hover:border-slate-350 group-hover:bg-slate-50"
+              : "border-slate-200 text-[#1E293B] group-hover:border-slate-300 group-hover:bg-slate-50"
           }`}
         >
           {isOpen ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}

@@ -67,16 +67,18 @@ export default function Portfolio() {
               />
               
               {/* Elegant Text Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-[#06B6D4] mb-2 font-bold">
-                  {item.category}
-                </span>
-                <h3 className="font-display font-bold text-xl text-[#FAF9F6] tracking-wide leading-tight">
-                  {item.title}
-                </h3>
-                <span className="text-[10px] tracking-widest uppercase text-stone-400 mt-4 border-t border-stone-850 pt-3 flex items-center gap-2">
-                  {t("port.view")} &rarr;
-                </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                  <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-[#06B6D4] mb-2 font-bold block">
+                    {item.category}
+                  </span>
+                  <h3 className="font-display font-bold text-xl text-[#FAF9F6] tracking-wide leading-tight">
+                    {item.title}
+                  </h3>
+                  <span className="text-[10px] tracking-widest uppercase text-stone-400 mt-4 border-t border-stone-800 pt-3 flex items-center gap-2">
+                    {t("port.view")} &rarr;
+                  </span>
+                </div>
               </div>
 
               {/* Minimalist Corner Label (visible by default) */}

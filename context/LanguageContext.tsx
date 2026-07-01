@@ -162,7 +162,7 @@ const translations = {
     "hero.cta.start": "Start Production",
     "hero.cta.learn": "Learn More",
     "hero.location": "Denpasar, Bali",
-    "ticker.items": "BRAND APPAREL|MERCHANDISE|WHITE LABEL|MAKLOON|RESELLER PROGRAM",
+    "ticker.items": "BRAND APPAREL|MERCHANDISE|WHITE LABEL|CMT SERVICES|RESELLER PROGRAM",
 
     // Core Positioning
     "core.badge": "Our Vision & Positioning",
