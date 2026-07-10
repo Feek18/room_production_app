@@ -86,7 +86,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href={`https://wa.me/6281234567890?text=${encodeURIComponent(t("path.2.wa"))}`}
+            href={`https://wa.me/6289644005097?text=${encodeURIComponent(t("path.2.wa"))}`}
             target="_blank"
             rel="noopener noreferrer"
             className="font-sans text-xs tracking-widest uppercase bg-[#1E293B] text-white border border-[#1E293B] px-6 py-2.5 hover:bg-transparent hover:text-[#1E293B] hover:border-[#1E293B] transition-all duration-300"
@@ -164,7 +164,7 @@ export default function Navbar() {
             </div>
 
             <a
-              href={`https://wa.me/6281234567890?text=${encodeURIComponent(t("path.2.wa"))}`}
+              href={`https://wa.me/6289644005097?text=${encodeURIComponent(t("path.2.wa"))}`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}

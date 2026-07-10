@@ -1,4 +1,4 @@
-import { MessageSquare, PenTool, ClipboardCheck, Scissors, Truck, LucideIcon } from "lucide-react";
+import { MessageSquare, PenTool, Scissors, Truck, LucideIcon } from "lucide-react";
 
 export interface WorkflowStep {
   num: string;
@@ -24,18 +24,12 @@ export const getWorkflowSteps = (t: (key: string) => string): WorkflowStep[] => 
     num: "03",
     title: t("core.step.3.title"),
     desc: t("core.step.3.desc"),
-    icon: ClipboardCheck,
+    icon: Scissors,
   },
   {
     num: "04",
     title: t("core.step.4.title"),
     desc: t("core.step.4.desc"),
-    icon: Scissors,
-  },
-  {
-    num: "05",
-    title: t("core.step.5.title"),
-    desc: t("core.step.5.desc"),
     icon: Truck,
   },
 ];

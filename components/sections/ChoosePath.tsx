@@ -54,7 +54,7 @@ export default function ChoosePath() {
               <motion.a
                 key={path.num}
                 variants={itemVariants}
-                href={`https://wa.me/6281234567890?text=${encodeURIComponent(path.waText)}`}
+                href={`https://wa.me/6289644005097?text=${encodeURIComponent(path.waText)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative p-8 md:p-12 flex flex-col justify-between hover:bg-[#1E293B] transition-colors duration-500 bg-white text-[#1E293B] hover:text-white"

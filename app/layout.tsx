@@ -90,20 +90,20 @@ const jsonLdData = {
   "image": "https://roomproduction.com/logo.png",
   "@id": "https://roomproduction.com/#organization",
   "url": "https://roomproduction.com",
-  "telephone": "+6281234567890",
+  "telephone": "+6289644005097",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Jl. Raya Denpasar",
+    "streetAddress": "Jl. Tukad Batanghari VII, Dauh Puri Klod",
     "addressLocality": "Denpasar",
     "addressRegion": "Bali",
-    "postalCode": "80234",
+    "postalCode": "80232",
     "addressCountry": "ID"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": -8.672583852077977,
-    "longitude": 115.1437172822791
+    "latitude": -8.6791,
+    "longitude": 115.2281
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",

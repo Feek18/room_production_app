@@ -28,8 +28,8 @@ export default function MapSection() {
             <div className="flex flex-col gap-6 border-t border-slate-200/80 pt-8">
               {contactDetails.map((detail, index) => {
                 const Icon = detail.icon;
-                return (
-                  <div key={index} className="flex items-start gap-4 group cursor-pointer">
+                const contentEl = (
+                  <>
                     {/* Premium icon container */}
                     <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200/60 flex items-center justify-center text-[#1E293B] group-hover:bg-[#06B6D4]/10 group-hover:text-[#06B6D4] group-hover:border-[#06B6D4]/30 transition-all duration-300 flex-shrink-0">
                       <Icon className="w-5 h-5" />
@@ -43,6 +43,26 @@ export default function MapSection() {
                         {detail.content}
                       </span>
                     </div>
+                  </>
+                );
+
+                if (detail.link) {
+                  return (
+                    <a
+                      key={index}
+                      href={detail.link}
+                      target={detail.link.startsWith("http") ? "_blank" : undefined}
+                      rel={detail.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="flex items-start gap-4 group cursor-pointer"
+                    >
+                      {contentEl}
+                    </a>
+                  );
+                }
+
+                return (
+                  <div key={index} className="flex items-start gap-4 group">
+                    {contentEl}
                   </div>
                 );
               })}
@@ -60,7 +80,7 @@ export default function MapSection() {
             >
               <div className="w-full h-full rounded-2xl overflow-hidden relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126210.15849880175!2d115.1437172822791!3d-8.672583852077977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23f717f4b3f87%3A0x6b0933cb66cb1e8b!2sDenpasar%2C%20Bali!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                  src="https://maps.google.com/maps?q=Konveksi%20Bali%20-%20Youniform%20konveksi%20office,%20Jalan%20Tukad%20Batanghari%20VII,%20Dauh%20Puri%20Klod,%20Kota%20Denpasar,%20Bali&t=&z=16&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

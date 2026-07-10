@@ -97,7 +97,7 @@ export default function Products() {
 
                 {/* CTA Button */}
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(prod.waText)}`}
+                  href={`https://wa.me/6289644005097?text=${encodeURIComponent(prod.waText)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/btn w-full font-sans text-xs tracking-widest uppercase border border-[#1E293B] text-[#1E293B] hover:bg-[#1E293B] hover:text-white py-3.5 flex items-center justify-center gap-2 transition-all duration-300 font-semibold"

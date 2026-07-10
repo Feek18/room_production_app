@@ -1,4 +1,4 @@
-import { Scale, MessageCircle, BarChart3, Tag, RotateCcw, HeartHandshake, LucideIcon } from "lucide-react";
+import { Scale, MessageCircle, BarChart3, Tag, RotateCcw, ShieldCheck, LucideIcon } from "lucide-react";
 
 export interface ReasonItem {
   icon: LucideIcon;
@@ -33,7 +33,7 @@ export const getWhyUsReasons = (t: (key: string) => string): ReasonItem[] => [
     description: t("why.5.desc")
   },
   {
-    icon: HeartHandshake,
+    icon: ShieldCheck,
     title: t("why.6.title"),
     description: t("why.6.desc")
   }

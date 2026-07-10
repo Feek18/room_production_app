@@ -35,7 +35,7 @@ export default function Footer() {
               </div>
               <div className="lg:col-span-4 flex lg:justify-end">
                 <a
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent(t("foot.cta.title"))}`}
+                  href={`https://wa.me/6289644005097?text=${encodeURIComponent(t("foot.cta.title"))}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group font-sans text-xs tracking-widest uppercase bg-white text-[#0F172A] px-8 py-4 flex items-center justify-center gap-3 hover:bg-[#06B6D4] hover:text-white transition-all duration-300 w-full sm:w-auto rounded-xl font-bold shadow-lg shadow-white/5 active:scale-95"
@@ -84,7 +84,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6289644005097"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-slate-800 bg-slate-900/40 flex items-center justify-center hover:bg-[#06B6D4] hover:text-white hover:border-[#06B6D4] transition-all duration-300 text-slate-400"
@@ -156,14 +156,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-slate-500 flex-shrink-0" />
-                <a href="mailto:info@roomproduction.com" className="hover:text-white transition-colors">
-                  info@roomproduction.com
+                <a href="mailto:Youniform.bali@gmail.com" className="hover:text-white transition-colors">
+                  Youniform.bali@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-slate-500 flex-shrink-0" />
-                <a href="tel:+6281234567890" className="hover:text-white transition-colors">
-                  +62 812-3456-7890
+                <a href="tel:+6289644005097" className="hover:text-white transition-colors">
+                  +62 896-4400-5097
                 </a>
               </li>
             </ul>
@@ -176,9 +176,14 @@ export default function Footer() {
             </h3>
             <p className="font-sans text-sm text-slate-400 leading-relaxed mb-4 flex items-start gap-3">
               <MapPin className="w-4 h-4 text-slate-500 mt-1 flex-shrink-0" />
-              <span>
-                Jl. Raya Denpasar, Denpasar, Bali, Indonesia
-              </span>
+              <a
+                href="https://maps.google.com?q=Konveksi%20Bali%20-%20Youniform%20konveksi%20office,%20Jalan%20Tukad%20Batanghari%20VII,%20Dauh%20Puri%20Klod,%20Kota%20Denpasar,%20Bali&ftid=0x2dd23f3bff39c059:0xfdad05db63a4952d&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813469,94286869&g_st=ic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                {t("map.addr.content")}
+              </a>
             </p>
             <p className="font-sans text-xs text-slate-500 mt-6 leading-relaxed border-t border-slate-900 pt-4">
               {t("foot.notice")}

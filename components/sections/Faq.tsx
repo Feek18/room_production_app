@@ -46,7 +46,7 @@ export default function Faq() {
                 </p>
               </div>
               <a
-                href="https://wa.me/6281234567890?text=Halo%20Room%20Production,%20saya%20memiliki%20pertanyaan%20mengenai%20produksi."
+                href="https://wa.me/6289644005097?text=Halo%20Room%20Production,%20saya%20memiliki%20pertanyaan%20mengenai%20produksi."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group font-sans text-xs tracking-widest uppercase bg-[#1E293B] text-white px-6 py-3 flex items-center justify-center gap-2 hover:bg-[#06B6D4] transition-colors duration-300 rounded-lg font-bold"
