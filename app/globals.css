@@ -1,17 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #1E293B;
-  --accent: #06B6D4;
+  --background: #FAF9F5;
+  --foreground: #111C2B;
+  --accent: #0097C2;
+  --accent-muted: #E0F2FE;
+  --atelier-dark: #101824;
+  --atelier-dark-surface: #182232;
   --border-color: #E5E7EB;
+  --border-dark: #243042;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
+  --color-atelier-dark: var(--atelier-dark);
+  --color-atelier-dark-surface: var(--atelier-dark-surface);
   --color-border-custom: var(--border-color);
+  --color-border-dark: var(--border-dark);
   --font-sans: var(--font-jakarta);
   --font-display: var(--font-outfit);
 }
@@ -20,8 +28,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-jakarta), sans-serif;
+  letter-spacing: -0.01em;
 }
 
+/* Smooth Atelier Marquee */
 @keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
@@ -32,6 +42,9 @@ body {
 }
 
 .animate-marquee {
-  animation: marquee 25s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

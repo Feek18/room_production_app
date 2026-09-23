@@ -35,14 +35,14 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         scrolled
-          ? "bg-white/85 backdrop-blur-md border-[#E5E7EB] py-3"
+          ? "bg-[#FAF9F5]/90 backdrop-blur-md border-[#E7E5DE] py-3.5 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]"
           : "bg-transparent border-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Brand Logo */}
         <a href="#" className="flex flex-col group py-1">
-          <Logo className="h-8 md:h-10 w-auto" />
+          <Logo className="h-8 md:h-9 w-auto" />
         </a>
 
         {/* Desktop Links */}
@@ -51,37 +51,37 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="font-sans text-sm tracking-wider uppercase text-slate-500 hover:text-[#1E293B] transition-colors duration-200"
+              className="font-sans text-xs tracking-wider uppercase font-medium text-neutral-600 hover:text-[#141517] transition-colors duration-200"
             >
               {link.name}
             </a>
           ))}
 
-          {/* Premium Language Switcher with Flags */}
-          <div className="flex items-center gap-2.5 border-l border-slate-200 pl-6 ml-2 select-none">
+          {/* Premium Language Switcher */}
+          <div className="flex items-center gap-1.5 border-l border-[#E7E5DE] pl-6 ml-2 select-none">
             <button
               onClick={() => setLanguage("id")}
-              className={`flex items-center gap-1.5 py-1.5 px-2.5 rounded-full transition-all duration-200 ${
+              className={`flex items-center gap-1.5 py-1 px-2.5 rounded text-[11px] font-sans tracking-wider uppercase font-semibold transition-all duration-200 ${
                 language === "id"
-                  ? "bg-slate-100 ring-1 ring-slate-200/50 text-[#1E293B]"
-                  : "text-slate-400 hover:text-[#1E293B] hover:bg-slate-50"
+                  ? "bg-[#141517] text-[#FAF9F5]"
+                  : "text-neutral-500 hover:text-[#141517] hover:bg-neutral-200/50"
               }`}
               title="Bahasa Indonesia"
             >
-              <IndonesiaFlag className="w-4 h-4 shadow-sm" />
-              <span className="font-sans text-[11px] tracking-wider uppercase font-bold">ID</span>
+              <IndonesiaFlag className="w-3.5 h-3.5 shadow-sm" />
+              <span>ID</span>
             </button>
             <button
               onClick={() => setLanguage("en")}
-              className={`flex items-center gap-1.5 py-1.5 px-2.5 rounded-full transition-all duration-200 ${
+              className={`flex items-center gap-1.5 py-1 px-2.5 rounded text-[11px] font-sans tracking-wider uppercase font-semibold transition-all duration-200 ${
                 language === "en"
-                  ? "bg-slate-100 ring-1 ring-slate-200/50 text-[#1E293B]"
-                  : "text-slate-400 hover:text-[#1E293B] hover:bg-slate-50"
+                  ? "bg-[#141517] text-[#FAF9F5]"
+                  : "text-neutral-500 hover:text-[#141517] hover:bg-neutral-200/50"
               }`}
               title="English"
             >
-              <UKFlag className="w-4 h-4 shadow-sm" />
-              <span className="font-sans text-[11px] tracking-wider uppercase font-bold">EN</span>
+              <UKFlag className="w-3.5 h-3.5 shadow-sm" />
+              <span>EN</span>
             </button>
           </div>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
             href={`https://wa.me/6289644005097?text=${encodeURIComponent(t("path.2.wa"))}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-sans text-xs tracking-widest uppercase bg-[#1E293B] text-white border border-[#1E293B] px-6 py-2.5 hover:bg-transparent hover:text-[#1E293B] hover:border-[#1E293B] transition-all duration-300"
+            className="font-sans text-[11px] tracking-widest uppercase bg-[#141517] text-[#FAF9F5] border border-[#141517] px-5 py-2.5 hover:bg-transparent hover:text-[#141517] transition-all duration-300 font-semibold"
           >
             {t("nav.cta")}
           </a>
@@ -98,7 +98,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 text-[#1E293B] hover:bg-stone-100 rounded-full transition-colors"
+          className="md:hidden p-2 text-[#141517] hover:bg-neutral-100 rounded transition-colors"
           aria-label="Toggle menu"
         >
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,27 +109,27 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-[#E5E7EB] py-6 px-8 flex flex-col gap-6 shadow-sm"
+            className="md:hidden absolute top-full left-0 right-0 bg-[#FAF9F5] border-b border-[#E7E5DE] py-6 px-8 flex flex-col gap-5 shadow-lg"
           >
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="font-sans text-sm tracking-wider uppercase text-slate-500 hover:text-[#1E293B] transition-colors"
+                className="font-sans text-xs tracking-wider uppercase text-neutral-600 hover:text-[#141517] transition-colors py-1"
               >
                 {link.name}
               </a>
             ))}
 
-            {/* Mobile Language Switcher with Flags */}
-            <div className="flex flex-col gap-3 py-3 border-t border-slate-100">
-              <span className="font-sans text-xs uppercase tracking-wider text-slate-400">
-                Pilih Bahasa / Select Language:
+            {/* Mobile Language Switcher */}
+            <div className="flex flex-col gap-2.5 py-3 border-t border-[#E7E5DE]">
+              <span className="font-sans text-[10px] uppercase tracking-wider text-neutral-400">
+                Pilih Bahasa / Language:
               </span>
               <div className="flex items-center gap-3">
                 <button
@@ -137,28 +137,28 @@ export default function Navbar() {
                     setLanguage("id");
                     setIsOpen(false);
                   }}
-                  className={`flex items-center gap-2 py-2 px-4 rounded-full border transition-all ${
+                  className={`flex items-center gap-2 py-1.5 px-3.5 rounded border text-xs tracking-wider uppercase font-semibold transition-all ${
                     language === "id"
-                      ? "border-[#06B6D4] bg-cyan-50/20 text-[#1E293B] font-bold"
-                      : "border-slate-200 text-slate-500"
+                      ? "border-[#141517] bg-[#141517] text-[#FAF9F5]"
+                      : "border-[#E7E5DE] text-neutral-600 bg-white"
                   }`}
                 >
-                  <IndonesiaFlag className="w-4 h-4 shadow-sm" />
-                  <span className="font-sans text-xs tracking-wider uppercase">Indonesia</span>
+                  <IndonesiaFlag className="w-3.5 h-3.5" />
+                  <span>Indonesia</span>
                 </button>
                 <button
                   onClick={() => {
                     setLanguage("en");
                     setIsOpen(false);
                   }}
-                  className={`flex items-center gap-2 py-2 px-4 rounded-full border transition-all ${
+                  className={`flex items-center gap-2 py-1.5 px-3.5 rounded border text-xs tracking-wider uppercase font-semibold transition-all ${
                     language === "en"
-                      ? "border-[#06B6D4] bg-cyan-50/20 text-[#1E293B] font-bold"
-                      : "border-slate-200 text-slate-500"
+                      ? "border-[#141517] bg-[#141517] text-[#FAF9F5]"
+                      : "border-[#E7E5DE] text-neutral-600 bg-white"
                   }`}
                 >
-                  <UKFlag className="w-4 h-4 shadow-sm" />
-                  <span className="font-sans text-xs tracking-wider uppercase">English</span>
+                  <UKFlag className="w-3.5 h-3.5" />
+                  <span>English</span>
                 </button>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="font-sans text-xs tracking-widest uppercase bg-[#1E293B] text-white border border-[#1E293B] py-3 text-center hover:bg-transparent hover:text-[#1E293B] transition-all duration-300"
+              className="font-sans text-xs tracking-widest uppercase bg-[#141517] text-[#FAF9F5] border border-[#141517] py-3 text-center hover:bg-transparent hover:text-[#141517] transition-all duration-300 font-semibold mt-1"
             >
               {t("nav.cta")}
             </a>
@@ -184,24 +184,17 @@ const IndonesiaFlag = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" className={`rounded-full overflow-hidden ${className}`}>
     <rect width="24" height="12" fill="#D7141A" />
     <rect y="12" width="24" height="12" fill="#FFFFFF" />
-    <circle cx="12" cy="12" r="12" stroke="#E5E7EB" strokeWidth="1" fill="none" />
+    <circle cx="12" cy="12" r="12" stroke="#E7E5DE" strokeWidth="1" fill="none" />
   </svg>
 );
 
 const UKFlag = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" className={`rounded-full overflow-hidden ${className}`}>
-    {/* Blue background */}
     <rect width="24" height="24" fill="#0A1B72" />
-    {/* White diagonal saltire */}
     <path d="M0 0 L24 24 M0 24 L24 0" stroke="#FFFFFF" strokeWidth="2.5" />
-    {/* Red diagonal saltire */}
     <path d="M0 0 L24 24 M0 24 L24 0" stroke="#D7141A" strokeWidth="1.2" />
-    {/* White cross */}
     <path d="M12 0 V24 M0 12 H24" stroke="#FFFFFF" strokeWidth="4.5" />
-    {/* Red cross */}
     <path d="M12 0 V24 M0 12 H24" stroke="#D7141A" strokeWidth="2.5" />
-    {/* Outline */}
-    <circle cx="12" cy="12" r="12" stroke="#E5E7EB" strokeWidth="1" fill="none" />
+    <circle cx="12" cy="12" r="12" stroke="#E7E5DE" strokeWidth="1" fill="none" />
   </svg>
 );
-

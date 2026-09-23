@@ -141,7 +141,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="min-h-full flex flex-col bg-white text-[#1E293B] selection:bg-[#06B6D4] selection:text-white"
+        className="min-h-full flex flex-col bg-[#FAF9F5] text-[#141517] selection:bg-[#141517] selection:text-[#FAF9F5]"
         suppressHydrationWarning
       >
         <LanguageProvider>

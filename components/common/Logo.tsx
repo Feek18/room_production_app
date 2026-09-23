@@ -6,9 +6,9 @@ interface LogoProps {
 }
 
 export default function Logo({ className = "h-12", light = false }: LogoProps) {
-  const navyColor = light ? "#FAF9F6" : "#1E293B";
-  const cyanColor = "#06B6D4";
-  const textColor = light ? "#A8A29E" : "#1E293B";
+  const navyColor = light ? "#FAF9F5" : "#111C2B";
+  const accentColor = "#0097C2";
+  const textColor = light ? "#94A3B8" : "#111C2B";
 
   return (
     <svg
@@ -26,7 +26,7 @@ export default function Logo({ className = "h-12", light = false }: LogoProps) {
         strokeLinecap="square"
         strokeLinejoin="miter"
       />
-      {/* Slanted leg of R (slightly offset for stylized gap) */}
+      {/* Slanted leg of R */}
       <path
         d="M27 38.5 L39.5 54"
         stroke={navyColor}
@@ -42,10 +42,9 @@ export default function Logo({ className = "h-12", light = false }: LogoProps) {
       />
 
       {/* --- INFINITY OO SYMBOL --- */}
-      {/* High-fidelity custom infinity path representing the double O */}
       <path
         d="M75 37 C67.5 27 54 27 46.5 37 C39 47 52.5 47 60 37 L90 37 C97.5 27 111 27 118.5 37 C126 47 112.5 47 105 37 L75 37 Z"
-        stroke={cyanColor}
+        stroke={accentColor}
         strokeWidth="6.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -63,7 +62,7 @@ export default function Logo({ className = "h-12", light = false }: LogoProps) {
       {/* Right leg cyan highlight on M */}
       <path
         d="M151 32 L156 20 M151 54 V34"
-        stroke={cyanColor}
+        stroke={accentColor}
         strokeWidth="2.5"
         strokeLinecap="round"
       />
@@ -82,17 +81,15 @@ export default function Logo({ className = "h-12", light = false }: LogoProps) {
       </text>
 
       {/* --- PARTNER PRODUKSIMU FOOTER --- */}
-      {/* Left Cyan Line */}
       <line
         x1="15"
         y1="90"
         x2="45"
         y2="90"
-        stroke={cyanColor}
+        stroke={accentColor}
         strokeWidth="2"
         strokeLinecap="round"
       />
-      {/* Centered text */}
       <text
         x="53"
         y="93"
@@ -104,13 +101,12 @@ export default function Logo({ className = "h-12", light = false }: LogoProps) {
       >
         PARTNER PRODUKSIMU
       </text>
-      {/* Right Cyan Line */}
       <line
         x1="183"
         y1="90"
         x2="213"
         y2="90"
-        stroke={cyanColor}
+        stroke={accentColor}
         strokeWidth="2"
         strokeLinecap="round"
       />
