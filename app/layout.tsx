@@ -23,24 +23,11 @@ export const metadata: Metadata = {
     default: "Room Production | Premium Apparel & Uniform Production Partner",
     template: "%s | Room Production"
   },
-  description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri. Berbasis di Denpasar, Bali.",
-  keywords: [
-    "konveksi bali",
-    "konveksi denpasar",
-    "garment bali",
-    "sablon kaos bali",
-    "custom apparel bali",
-    "vendor seragam bali",
-    "bikin seragam denpasar",
-    "konveksi baju bali",
-    "clothing vendor bali",
-    "makloon jahit bali",
-    "white label apparel bali"
-  ],
+  description: "Kami membantu kamu, apa pun latar belakangmu: mahasiswa, brand lokal, komunitas, ataupun reseller, kami bisa bantu. Kini kamu bisa memiliki brand sendiri.",
   authors: [{ name: "Room Production" }],
   creator: "Room Production",
   publisher: "Room Production",
-  metadataBase: new URL("https://room-production-app.vercel.app"), // Ganti dengan domain asli saat custom domain aktif
+  metadataBase: new URL("https://www.garmentbali.id"),
   alternates: {
     canonical: "/",
     languages: {
@@ -51,9 +38,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://room-production-app.vercel.app",
+    url: "/",
     title: "Room Production | Premium Apparel & Uniform Production Partner",
-    description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri. Berbasis di Denpasar, Bali.",
+    description: "Kami membantu kamu, apa pun latar belakangmu: mahasiswa, brand lokal, komunitas, ataupun reseller, kami bisa bantu. Kini kamu bisa memiliki brand sendiri.",
     siteName: "Room Production",
     images: [
       {
@@ -67,7 +54,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Room Production | Premium Apparel & Uniform Partner",
-    description: "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri.",
+    description: "Kami membantu kamu, apa pun latar belakangmu: mahasiswa, brand lokal, komunitas, ataupun reseller, kami bisa bantu. Kini kamu bisa memiliki brand sendiri.",
     images: ["/logo.jpg"]
   },
   robots: {
@@ -87,9 +74,9 @@ const jsonLdData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Room Production",
-  "image": "https://roomproduction.com/logo.png",
-  "@id": "https://roomproduction.com/#organization",
-  "url": "https://roomproduction.com",
+  "image": "https://www.garmentbali.id/logo.jpg",
+  "@id": "https://www.garmentbali.id/#organization",
+  "url": "https://www.garmentbali.id",
   "telephone": "+6289644005097",
   "priceRange": "$$",
   "address": {
@@ -119,7 +106,7 @@ const jsonLdData = {
     "closes": "17:00"
   },
   "sameAs": [
-    "https://www.instagram.com/roomproduction"
+    "https://www.instagram.com/youniform.bali"
   ]
 };
 

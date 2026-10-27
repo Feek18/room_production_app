@@ -1,6 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
+import { OPERATIONAL_HOURS } from "@/data/constants";
 
 export type Language = "id" | "en";
 
@@ -33,7 +34,7 @@ const translations = {
     "hero.badge": "Kualitas Manufaktur Premium",
     "hero.title": "ROOM PRODUCTION",
     "hero.subtitle": "Partner Produksimu.",
-    "hero.desc": "Kami membantu mahasiswa, brand lokal, komunitas, dan reseller memproduksi apparel berkualitas tinggi tanpa harus memiliki pabrik sendiri. Dari konsep hingga produk jadi di tangan Anda.",
+    "hero.desc": "Kami membantu kamu, apa pun latar belakangmu: mahasiswa, brand lokal, komunitas, ataupun reseller, kami bisa bantu. Kini kamu bisa memiliki brand sendiri tanpa harus punya pabrik sendiri. Yuk kenal kami lebih jauh.",
     "hero.cta.start": "Mulai Produksi",
     "hero.cta.learn": "Pelajari Lebih Lanjut",
     "hero.location": "Denpasar, Bali",
@@ -43,7 +44,7 @@ const translations = {
     "core.badge": "Visi & Positioning Kami",
     "core.title": "Lebih dari Sekadar Konveksi",
     "core.desc1": "Room Production dibangun untuk membantu generasi baru entrepreneur fashion dan apparel mewujudkan visi mereka tanpa batas.",
-    "core.desc2": "Kami bukan sekadar tempat menjahit kain dan menempelkan sablon. Room Production adalah partner yang mendampingi Anda membangun dan mengembangkan bisnis apparel dari nol — mulai dari pencarian ide, pengembangan desain, pembuatan sampel (sampling), produksi massal, hingga strategi pertumbuhan brand Anda.",
+    "core.desc2": "Kami bukan sekadar tempat produksi. Room Production adalah partner yang mendampingi Anda membangun dan mengembangkan bisnis apparel dari nol — mulai dari pencarian ide, pengembangan desain, pembuatan sampel (sampling), produksi massal, hingga strategi pertumbuhan brand Anda. We know, we trust, and we grow.",
     "core.step.1.title": "Pencarian Ide & Konsultasi",
     "core.step.1.desc": "Diskusi gratis konsep produk, pemilihan bahan kain, dan kalkulasi biaya awal secara transparan.",
     "core.step.2.title": "Design Visual",
@@ -132,7 +133,7 @@ const translations = {
     "map.phone.title": "Telepon / WhatsApp",
     "map.email.title": "E-mail",
     "map.hours.title": "Jam Operasional",
-    "map.hours.content": "Senin - Sabtu | 09.00 - 17.00 WITA",
+    "map.hours.content": `Senin - Sabtu | ${OPERATIONAL_HOURS} WITA`,
 
     // Footer
     "foot.cta.badge": "Mulai Sekarang",
@@ -255,7 +256,7 @@ const translations = {
     "map.phone.title": "Phone / WhatsApp",
     "map.email.title": "E-mail",
     "map.hours.title": "Operational Hours",
-    "map.hours.content": "Monday - Saturday | 09:00 - 17:00 WITA",
+    "map.hours.content": `Monday - Saturday | ${OPERATIONAL_HOURS} WITA`,
 
     // Footer
     "foot.cta.badge": "Get Started",

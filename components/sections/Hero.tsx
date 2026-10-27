@@ -113,9 +113,10 @@ export default function Hero() {
           >
             <Image
               src="/images/SAVE_20260628_165959.jpg"
-              alt="Room Production Apparel Mockup"
+              alt="Penjahit sedang memproduksi apparel di workshop Room Production"
               fill
-              priority
+              loading="eager"
+              fetchPriority="high"
               className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               sizes="(max-width: 1024px) 100vw, 420px"
             />

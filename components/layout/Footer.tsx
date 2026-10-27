@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, MapPin, Mail, Phone, Clock } from "lucide-react";
 import Logo from "@/components/common/Logo";
 import { useLanguage } from "@/context/LanguageContext";
+import { OPERATIONAL_HOURS } from "@/data/constants";
 
 export default function Footer() {
   const { t, language } = useLanguage();
@@ -60,11 +61,11 @@ export default function Footer() {
             {/* Social Media Links */}
             <div className="flex items-center gap-3 mt-8">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/youniform.bali"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded bg-[#182232] border border-[#243042] flex items-center justify-center hover:bg-[#FAF9F5] hover:text-[#111C2B] hover:border-[#FAF9F5] transition-all duration-300 text-slate-400"
-                aria-label="Instagram Room Production"
+                aria-label="Instagram Youniform Bali"
               >
                 <svg
                   className="w-4 h-4"
@@ -143,8 +144,8 @@ export default function Footer() {
                 <Clock className="w-4 h-4 text-slate-500 flex-shrink-0" />
                 <span>
                   {language === "id"
-                    ? "Senin - Sabtu: 09:00 - 18:00 WITA"
-                    : "Mon - Sat: 09:00 - 18:00 GMT+8"}
+                    ? `Senin - Sabtu: ${OPERATIONAL_HOURS} WITA`
+                    : `Mon - Sat: ${OPERATIONAL_HOURS} GMT+8`}
                 </span>
               </li>
               <li className="flex items-center gap-3">
