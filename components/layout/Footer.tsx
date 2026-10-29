@@ -11,9 +11,6 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#101824] text-[#FAF9F5] pt-20 pb-12 overflow-hidden relative border-t border-[#243042]">
-      {/* Precision hairline grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#243042_1px,transparent_1px),linear-gradient(to_bottom,#243042_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-15 pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
 
         {/* Final CTA Banner Card */}
@@ -95,7 +92,7 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div className="lg:col-span-2 lg:col-start-6 col-start-auto">
-            <h3 className="font-mono font-bold text-xs uppercase tracking-[0.25em] text-[#0097C2] mb-6">
+            <h3 className="font-sans font-bold text-xs uppercase tracking-[0.2em] text-[#0097C2] mb-6">
               {t("foot.nav")}
             </h3>
             <ul className="space-y-3.5">
@@ -136,7 +133,7 @@ export default function Footer() {
 
           {/* Column 3: Contact & Hours */}
           <div className="lg:col-span-3">
-            <h3 className="font-mono font-bold text-xs uppercase tracking-[0.25em] text-[#0097C2] mb-6">
+            <h3 className="font-sans font-bold text-xs uppercase tracking-[0.2em] text-[#0097C2] mb-6">
               {language === "id" ? "Kontak & Jam Kerja" : "Contact & Hours"}
             </h3>
             <ul className="space-y-3.5 text-slate-400 text-xs md:text-sm font-sans">
@@ -165,7 +162,7 @@ export default function Footer() {
 
           {/* Column 4: Workspace Address */}
           <div className="lg:col-span-3">
-            <h3 className="font-mono font-bold text-xs uppercase tracking-[0.25em] text-[#0097C2] mb-6">
+            <h3 className="font-sans font-bold text-xs uppercase tracking-[0.2em] text-[#0097C2] mb-6">
               {t("foot.hq")}
             </h3>
             <p className="font-sans text-xs md:text-sm text-slate-400 leading-relaxed mb-4 flex items-start gap-3">
@@ -188,11 +185,11 @@ export default function Footer() {
 
         {/* Bottom Copyright Area */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-[#243042] pt-8">
-          <span className="font-mono text-[11px] text-slate-500">
+          <span className="font-sans text-[11px] text-slate-500">
             &copy; {new Date().getFullYear()} ROOM PRODUCTION. ALL RIGHTS RESERVED.
           </span>
-          <span className="font-mono text-[10px] text-slate-600 tracking-wider uppercase">
-            STUDIO DENPASAR // BALI
+          <span className="font-sans text-[10px] text-slate-500 tracking-wider uppercase">
+            STUDIO DENPASAR • BALI
           </span>
         </div>
       </div>

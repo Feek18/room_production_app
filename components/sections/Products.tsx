@@ -68,17 +68,17 @@ export default function Products() {
                 variants={cardVariants}
                 className="flex flex-col bg-white border border-[#E5E7EB] hover:border-[#0097C2]/70 transition-all duration-300 group shadow-sm"
               >
-                {/* Product Lookbook Image */}
+                {/* Product Image */}
                 <div className="relative w-full aspect-[4/5] bg-neutral-100 overflow-hidden border-b border-[#E5E7EB]">
                   <Image
                     src={prod.image}
-                    alt={`${prod.title} Lookbook`}
+                    alt={prod.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                     sizes="(max-width: 1024px) 100vw, 380px"
                   />
                   <div className="absolute top-4 left-4 bg-[#FAF9F5]/90 backdrop-blur-sm border border-[#E5E7EB] px-3 py-1 font-mono text-[9px] uppercase tracking-widest font-bold text-[#111C2B]">
-                    CAT {indexFormatted} // SPEC
+                    KATALOG {indexFormatted}
                   </div>
                 </div>
 

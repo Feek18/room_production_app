@@ -10,12 +10,9 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[92vh] pt-32 pb-20 md:pt-40 md:pb-28 flex items-center overflow-hidden bg-[#FAF9F5] border-b border-[#E5E7EB]">
-      {/* Subtle Hairline Grid Accent */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#E5E7EB_1px,transparent_1px),linear-gradient(to_bottom,#E5E7EB_1px,transparent_1px)] bg-[size:6rem_6rem] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_20%,#000_60%,transparent_100%)] opacity-35 pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center relative z-10">
         
-        {/* Left Side: Editorial Typography & Workshop Context */}
+        {/* Left Side: Typography & Info */}
         <div className="lg:col-span-7 flex flex-col justify-center select-none">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,7 +25,7 @@ export default function Hero() {
               {t("hero.badge")}
             </span>
             <span className="text-[11px] font-sans tracking-widest text-neutral-400 uppercase hidden sm:inline-block">
-              // {t("hero.location")}
+              {t("hero.location")}
             </span>
           </motion.div>
 
@@ -121,20 +118,20 @@ export default function Hero() {
               sizes="(max-width: 1024px) 100vw, 420px"
             />
             
-            {/* Editorial Lookbook Tag */}
+            {/* Workshop Photo Tag */}
             <div className="absolute top-4 left-4 bg-[#FAF9F5]/95 backdrop-blur-sm border border-[#E5E7EB] px-3.5 py-1.5 text-[10px] tracking-widest uppercase font-sans font-bold text-[#111C2B]">
-              LOOKBOOK // ARCHIVE 01
+              STUDIO WORKSHOP
             </div>
 
-            {/* Bottom Atelier Spec Sheet Stamp */}
+            {/* Bottom Info Stamp */}
             <div className="absolute bottom-4 left-4 right-4 bg-[#111C2B]/90 backdrop-blur-md text-[#FAF9F5] border border-white/10 p-3.5 flex items-center justify-between">
               <div>
-                <span className="block text-[9px] uppercase tracking-widest text-neutral-400 font-sans">Craftsmanship</span>
-                <span className="block text-xs font-display font-bold text-white">Denpasar Garment Studio</span>
+                <span className="block text-[9px] uppercase tracking-widest text-neutral-400 font-sans">Workshop</span>
+                <span className="block text-xs font-display font-bold text-white">Studio Denpasar, Bali</span>
               </div>
               <div className="text-right">
-                <span className="block text-[9px] uppercase tracking-widest text-neutral-400 font-sans">Standard</span>
-                <span className="block text-xs font-display font-bold text-[#0097C2]">High Boutique QC</span>
+                <span className="block text-[9px] uppercase tracking-widest text-neutral-400 font-sans">Standar</span>
+                <span className="block text-xs font-display font-bold text-[#0097C2]">QC Manual 100%</span>
               </div>
             </div>
           </motion.div>

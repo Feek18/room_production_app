@@ -75,9 +75,9 @@ export default function Portfolio() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 
-                {/* Minimalist Top Corner Label (default state) */}
+                {/* Top Corner Label */}
                 <div className="absolute top-4 left-4 bg-[#FAF9F5]/90 backdrop-blur-sm border border-[#E5E7EB] px-3 py-1 text-[9px] tracking-widest uppercase font-mono font-bold text-[#111C2B] group-hover:opacity-0 transition-opacity duration-300">
-                  {item.category} // #{indexFormatted}
+                  {item.category} • #{indexFormatted}
                 </div>
 
                 {/* Elegant Editorial Overlay on Hover */}

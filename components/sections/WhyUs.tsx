@@ -66,7 +66,7 @@ export default function WhyUs() {
                 <div>
                   <div className="flex items-center justify-between mb-6 pb-4 border-b border-neutral-100">
                     <span className="font-mono text-xs text-neutral-400 font-bold group-hover:text-[#0097C2] transition-colors">
-                      [ SPEC {indexFormatted} ]
+                      {indexFormatted}
                     </span>
                     <div className="w-9 h-9 rounded bg-neutral-50 border border-neutral-200 flex items-center justify-center text-[#111C2B] group-hover:bg-[#111C2B] group-hover:text-white group-hover:border-[#111C2B] transition-all duration-300">
                       <Icon className="w-4 h-4" />

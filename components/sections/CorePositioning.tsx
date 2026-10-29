@@ -28,9 +28,6 @@ export default function CorePositioning() {
 
   return (
     <section className="py-24 md:py-36 bg-[#101824] text-[#FAF9F5] relative overflow-hidden border-b border-[#243042]">
-      {/* Precision hairline grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#243042_1px,transparent_1px),linear-gradient(to_bottom,#243042_1px,transparent_1px)] bg-[size:5rem_5rem] opacity-20 pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-start">
           
@@ -64,15 +61,15 @@ export default function CorePositioning() {
                 </p>
               </div>
 
-              {/* Atelier Production Standards */}
+              {/* Production Standards */}
               <div className="mt-10 pt-8 border-t border-[#243042] grid grid-cols-2 gap-6">
                 <div>
-                  <span className="block font-mono text-[10px] uppercase text-slate-400 tracking-wider">Workmanship</span>
-                  <span className="block font-sans text-sm font-semibold text-slate-200 mt-1">Boutique Standard</span>
+                  <span className="block font-sans text-[11px] uppercase text-slate-400 tracking-wider">Standar Jahitan</span>
+                  <span className="block font-sans text-sm font-semibold text-slate-200 mt-1">Kualitas Butik</span>
                 </div>
                 <div>
-                  <span className="block font-mono text-[10px] uppercase text-slate-400 tracking-wider">Quality Gate</span>
-                  <span className="block font-sans text-sm font-semibold text-slate-200 mt-1">100% Hand Checked</span>
+                  <span className="block font-sans text-[11px] uppercase text-slate-400 tracking-wider">Quality Control</span>
+                  <span className="block font-sans text-sm font-semibold text-slate-200 mt-1">100% Cek Manual</span>
                 </div>
               </div>
             </motion.div>

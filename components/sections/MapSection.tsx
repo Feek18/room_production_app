@@ -35,7 +35,7 @@ export default function MapSection() {
                 const Icon = detail.icon;
                 const contentEl = (
                   <>
-                    {/* Atelier Icon Container */}
+                    {/* Icon Container */}
                     <div className="w-10 h-10 rounded bg-white border border-[#E5E7EB] flex items-center justify-center text-[#111C2B] group-hover:bg-[#111C2B] group-hover:text-[#FAF9F5] group-hover:border-[#111C2B] transition-all duration-300 flex-shrink-0">
                       <Icon className="w-4 h-4" />
                     </div>
@@ -92,13 +92,13 @@ export default function MapSection() {
                   allowFullScreen={false}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-full grayscale filter contrast-105 opacity-90"
+                  className="w-full h-full opacity-95"
                   title="Google Maps Room Production"
                 />
                 
-                {/* Atelier Location Badge */}
-                <div className="absolute bottom-4 right-4 bg-[#111C2B] border border-[#243042] px-3.5 py-2 font-mono text-[9px] tracking-widest uppercase font-bold text-[#FAF9F5] shadow-md pointer-events-none select-none">
-                  DENPASAR // BALI
+                {/* Location Badge */}
+                <div className="absolute bottom-4 right-4 bg-[#111C2B] border border-[#243042] px-3.5 py-2 font-sans text-[10px] tracking-widest uppercase font-bold text-[#FAF9F5] shadow-md pointer-events-none select-none">
+                  DENPASAR • BALI
                 </div>
               </div>
             </motion.div>
